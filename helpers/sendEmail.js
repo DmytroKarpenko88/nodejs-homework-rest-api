@@ -11,6 +11,7 @@ const sendEmail = async data => {
   return true;
 };
 
+module.exports = sendEmail;
 // const email = {
 //   to: 'daltumaspa@gufum.com',
 //   from: 'dmytro@gmail.com',
@@ -22,5 +23,3 @@ const sendEmail = async data => {
 //   .send(email)
 //   .then(() => console.log('Email send success'))
 //   .catch(error => console.log(error.massage));
-
-module.exports = sendEmail;
