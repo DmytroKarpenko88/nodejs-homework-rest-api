@@ -8,6 +8,12 @@ const router = express.Router();
 
 router.get('/current', authenticate, ctrl.getCurrent);
 
+router.post(
+  '/verify',
+  validateBody(schemas.emailSchema),
+  ctrl.resendVerifyEmail
+);
+
 router.patch(
   '/subscription',
   authenticate,
